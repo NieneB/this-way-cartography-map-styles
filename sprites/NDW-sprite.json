@@ -1,0 +1,26 @@
+{
+  "arrow": {
+    "height": 56,
+    "pixelRatio": 1,
+    "width": 56,
+    "x": 0,
+    "y": 0,
+    "sdf": true
+  },
+  "arrow-simple": {
+    "height": 56,
+    "pixelRatio": 1,
+    "width": 56,
+    "x": 56,
+    "y": 0,
+    "sdf": true
+  },
+  "arrow-simple-2": {
+    "height": 56,
+    "pixelRatio": 1,
+    "width": 56,
+    "x": 0,
+    "y": 56,
+    "sdf": true
+  }
+}

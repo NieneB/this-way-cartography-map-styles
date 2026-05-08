@@ -1,0 +1,86 @@
+{
+  "gras": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 272,
+    "y": 152
+  },
+  "gras2": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 336,
+    "y": 152
+  },
+  "gras_3": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 400,
+    "y": 152
+  },
+  "grasland": {
+    "height": 152,
+    "pixelRatio": 1,
+    "width": 152,
+    "x": 0,
+    "y": 0
+  },
+  "groenvoorziening": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 272,
+    "y": 216
+  },
+  "groenvoorziening.svg.2026_04_08_09_46_56.0": {
+    "height": 152,
+    "pixelRatio": 1,
+    "width": 152,
+    "x": 152,
+    "y": 0
+  },
+  "heide": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 152,
+    "y": 272
+  },
+  "loofbos": {
+    "height": 152,
+    "pixelRatio": 1,
+    "width": 152,
+    "x": 304,
+    "y": 0
+  },
+  "riet": {
+    "height": 64,
+    "pixelRatio": 1,
+    "width": 64,
+    "x": 336,
+    "y": 216
+  },
+  "shrubs": {
+    "height": 120,
+    "pixelRatio": 1,
+    "width": 120,
+    "x": 152,
+    "y": 152
+  },
+  "struiken": {
+    "height": 152,
+    "pixelRatio": 1,
+    "width": 152,
+    "x": 0,
+    "y": 152
+  },
+  "zand": {
+    "height": 152,
+    "pixelRatio": 1,
+    "width": 152,
+    "x": 0,
+    "y": 304
+  }
+}

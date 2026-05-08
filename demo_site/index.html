@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vector Tile Development Demo</title>
+  <script src="https://unpkg.com/maplibre-gl@^5.7.0/dist/maplibre-gl.js"></script>
+  <link href="https://unpkg.com/maplibre-gl@^5.7.0/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      font-family: Lato, Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    #map {
+      height: 100vh;
+      width: calc(100vw - 30vw);
+    }
+
+    h1 {
+      color: black;
+      z-index: 10000;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    #side-panel {
+      position: absolute;
+      right: 0;
+      width: 30vw;
+      height: 100vh;
+      overflow: scroll;
+      padding: 1rem;
+      background-color: #d2d2d2;
+
+    }
+
+    .legendDiv {
+      height: 15px;
+      width: 100px;
+    }
+
+    label {
+      flex-grow: 2;
+    }
+
+    .clickableLayer {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="map"></div>
+
+  <div id="side-panel">
+    <select id="myDropDown">
+      <option value="../styles/style_VVM_grey_v1.json"> VVM grey background</option>
+      <option value="../styles/style_NDW_demo_v1.json">NDW demo modular background</option>
+      <option value="../styles/style_PDOK_BRTAchtergrond_standaard.json">BRT achtergrondkaart standaard</option>
+    </select>
+    <h1>Layer overview</h1>
+    <div id="toc">
+    </div>
+  </div>
+  <script src="./main.js"></script>
+</body>
+
+</html>

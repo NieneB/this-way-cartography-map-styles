@@ -19,11 +19,11 @@
         },
         {
             "id": "sdf",
-            "url": "../sprites/sprite"
+            "url": "https://raw.githubusercontent.com/NieneB/this-way-cartography-map-styles/refs/heads/main/sprites/sdf"
         },
         {
             "id": "custom",
-            "url": "../sprites/custom_ndw"
+            "url": "https://raw.githubusercontent.com/NieneB/this-way-cartography-map-styles/refs/heads/main/sprites/NDW-sprite"
         }
     ],
     "glyphs": "https://maps.ndw.nu/styles/glyphs/{fontstack}/{range}.pbf",

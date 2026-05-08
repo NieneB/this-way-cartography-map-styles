@@ -19,7 +19,7 @@
         },
         {
             "id": "vvm",
-            "url": "../sprites/VVM"
+            "url": "https://raw.githubusercontent.com/NieneB/this-way-cartography-map-styles/refs/heads/main/sprites/VVM"
         }
     ],
     "glyphs": "https://maps.ndw.nu/styles/glyphs/{fontstack}/{range}.pbf",

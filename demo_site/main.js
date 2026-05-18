@@ -62,7 +62,7 @@ map.on("mousemove", (e) => {
     const props = Object.entries(feature.properties)
         .map(([k, v]) => `<tr><td><b>${k}</b></td><td>${v}</td></tr>`)
         .join("");
-    const html = `<div style="max-height:300px;overflow:auto">
+    const html = `<div>
         <strong>${feature.source} : ${feature.sourceLayer}</strong>
         <table style="font-size:12px;margin-top:4px">${props}</table>
     </div>`;

@@ -45,6 +45,30 @@ map.on("click", [
     });
 map.addControl(nav, "top-right");
 
+const popup = new maplibregl.Popup({
+    closeButton: false,
+    closeOnClick: false
+});
+
+map.on("mousemove", (e) => {
+    const features = map.queryRenderedFeatures(e.point);
+    if (features.length === 0) {
+        map.getCanvas().style.cursor = "";
+        popup.remove();
+        return;
+    }
+    map.getCanvas().style.cursor = "pointer";
+    const feature = features[0];
+    const props = Object.entries(feature.properties)
+        .map(([k, v]) => `<tr><td><b>${k}</b></td><td>${v}</td></tr>`)
+        .join("");
+    const html = `<div>
+        <strong>${feature.source} : ${feature.sourceLayer}</strong>
+        <table style="font-size:12px;margin-top:4px">${props}</table>
+    </div>`;
+    popup.setLngLat(e.lngLat).setHTML(html).addTo(map);
+});
+
 function toggleGroupLayers(group) {
     let style = map.getStyle();
     style.layers.forEach((layer) => {
@@ -119,6 +143,7 @@ function loadTOC() {
 
     const groups = [];
     styleObj.layers.forEach((layer) => {
+        console.log(layer.id);
         // console.log(layer.metadata.insertBefore);
         if (layer.metadata && layer.metadata.group) {
             if (!groups.includes(layer.metadata.group)) {
